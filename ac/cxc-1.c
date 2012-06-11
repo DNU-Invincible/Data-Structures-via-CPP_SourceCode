@@ -27,7 +27,7 @@ void swap(int *a, int *b)
 #define SENTINEL -1
 #define MAX_ARRAY 10
 
-main()
+int main()
 {
    int a[MAX_ARRAY];
    int n = 0;

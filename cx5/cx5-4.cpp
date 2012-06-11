@@ -7,17 +7,20 @@
    A. Michael Berman, Rowan University, berman@rowan.edu 
    http://www.rowan.edu/evolve
 */
-// RCS $Id: cx4-4.h,v 1.2 1997/08/01 18:26:06 berman Exp $
+// RCS $Id: cx5-4.cpp,v 1.3 1997/08/01 18:39:50 berman Exp $
 
-// cx4-4.h
-// Code Example 4-4: Definition of Time Class
+// cx5-4.cpp
+// Code Example 5-4: Max Select function
 
-//#include "dslib.h"
+int maxSelect(int a[], int n)
+{
+   int maxPos(0), currentPos(1);
 
-class Time {
-public:
-   void readTime(bool & errorFlag);
-   int subtractTimes(Time t);
-private:
-   int minutes;
-};
+   while (currentPos < n) {
+   // Invariant: a[maxPos] >= a[0] ... a[currentPos-1]
+      if (a[currentPos] > a[maxPos]) 
+         maxPos = currentPos;
+      currentPos++;
+   }
+   return maxPos;
+}

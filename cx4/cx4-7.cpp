@@ -13,6 +13,8 @@
 // Code Example 4-7: Implementation of the Time Class
 
 #include "cx4-5.h"
+#include <iostream>
+using namespace std;
 
 void Time::readTime(bool & errorFlag)
 {

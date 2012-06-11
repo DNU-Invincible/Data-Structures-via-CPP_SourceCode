@@ -7,17 +7,18 @@
    A. Michael Berman, Rowan University, berman@rowan.edu 
    http://www.rowan.edu/evolve
 */
-// RCS $Id: cx4-4.h,v 1.2 1997/08/01 18:26:06 berman Exp $
+// RCS $Id: cx5-7.cpp,v 1.2 1997/07/31 20:26:45 berman Exp $
 
-// cx4-4.h
-// Code Example 4-4: Definition of Time Class
+// cx5-7.cpp
+// Code Example 5-7: Bubble Sort
 
-//#include "dslib.h"
+void bubbleSortPhase(int a[], int last); // see cx5-6.cpp
 
-class Time {
-public:
-   void readTime(bool & errorFlag);
-   int subtractTimes(Time t);
-private:
-   int minutes;
-};
+void bubbleSort(int a[], int n)
+{
+	// Precondition: a is an array indexed from a[0] to a[n-1]
+	int i;
+	for (i = n - 1; i > 0; i--)
+		bubbleSortPhase(a, i);
+	// Postcondition: a is sorted
+}

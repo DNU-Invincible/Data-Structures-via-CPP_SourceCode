@@ -1,10 +1,10 @@
 /*
    Copyright (c) 1997 Oxford University Press. All Rights Reserved.
-   This code is from "Data Structures via C++: Objects by Evolution",
-   published by Oxford University Press.  Permission is hearby granted
-   to use this code for any educational, non-commercial purpose,
-   provided this notice remains intact.
-   A. Michael Berman, Rowan University, berman@rowan.edu
+   This code is from "Data Structures via C++: Objects by Evolution", 
+   published by Oxford University Press.  Permission is hearby granted 
+   to use this code for any educational, non-commercial purpose, 
+   provided this notice remains intact. 
+   A. Michael Berman, Rowan University, berman@rowan.edu 
    http://www.rowan.edu/evolve
 */
 // RCS $Id: cx4-3.cpp,v 1.3 1997/08/01 18:22:40 berman Exp $
@@ -12,9 +12,6 @@
 // cx4-3.cpp
 // Code Example 4-3: Implementation of Time ADT
 //#include "dslib.h"
-#include <iostream>
-using namespace std;
-
 typedef int Time;
 
 Time readTime(bool & errorFlag)
@@ -48,7 +45,7 @@ Time readTime(bool & errorFlag)
       AM_or_PM = AM;
    else if (c == 'P' || c == 'p')
       AM_or_PM = PM;
-   else
+   else 
       return 0;
    cin >> c;
    if (c != 'M' && c != 'm')
@@ -65,9 +62,9 @@ Time readTime(bool & errorFlag)
    if (AM_or_PM == PM)
       returnTime += 60*12;
    return returnTime;
-}
+}   
 
 int subtractTimes(Time t1, Time t2)
 {
    return t1 - t2;
-}
+}   

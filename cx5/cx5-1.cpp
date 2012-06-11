@@ -7,17 +7,16 @@
    A. Michael Berman, Rowan University, berman@rowan.edu 
    http://www.rowan.edu/evolve
 */
-// RCS $Id: cx4-4.h,v 1.2 1997/08/01 18:26:06 berman Exp $
+// RCS $Id: cx5-1.cpp,v 1.2 1997/08/01 18:34:13 berman Exp $
 
-// cx4-4.h
-// Code Example 4-4: Definition of Time Class
+// cx5-1.cpp
+// Code Example 5-1: Linear Search
 
-//#include "dslib.h"
-
-class Time {
-public:
-   void readTime(bool & errorFlag);
-   int subtractTimes(Time t);
-private:
-   int minutes;
-};
+int linearSearch(int a[], int n, int target)
+{
+   int i;
+   for (i = 0; i < n; i++)
+      if (a[i] == target) // key comparison
+         return i;
+   return -1; // use -1 to indicate failure
+}

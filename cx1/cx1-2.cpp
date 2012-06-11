@@ -39,18 +39,22 @@
 
 // Note on encapsulation: The representation of the dice is contained within
 // global variables -- we'll see shortly a better way to do this.
-#include <iostream.h>
-#include <stdlib.h>
-#include "dslib.h"
+
+#include <iostream>
+#include <cstdlib>
+//#include "dslib.h"
+
+using namespace std;
+
 int dice_1, dice_2;
 
 int roll()
 {
    // note -- you don't really want to call randomize every time you roll the
    // dice, but for this simplified design you don't have much choice.
-   randomize();
-   dice_1 = random(6) + 1;
-   dice_2 = random(6) + 1;
+   srand((unsigned)time(0));
+   dice_1 = (rand()%6)+1; 
+   dice_2= (rand()%6)+1;   
    return dice_1 + dice_2;
 }
 

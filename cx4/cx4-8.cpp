@@ -17,6 +17,9 @@
 // order to include a compatible String Class
 
 #include <string> 
+#include <iostream>
+
+using namespace std;
 
 int main()
 {

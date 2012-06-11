@@ -30,7 +30,7 @@
 using namespace std;
 
 void flush()
-{
+{ 
    // call istream::clear and extract any garbage until end of file
    cin.clear();
    int nextChar;

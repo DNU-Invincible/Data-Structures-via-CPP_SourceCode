@@ -1,10 +1,10 @@
 /*
    Copyright (c) 1997 Oxford University Press. All Rights Reserved.
-   This code is from "Data Structures via C++: Objects by Evolution",
-   published by Oxford University Press.  Permission is hearby granted
-   to use this code for any educational, non-commercial purpose,
-   provided this notice remains intact.
-   A. Michael Berman, Rowan University, berman@rowan.edu
+   This code is from "Data Structures via C++: Objects by Evolution", 
+   published by Oxford University Press.  Permission is hearby granted 
+   to use this code for any educational, non-commercial purpose, 
+   provided this notice remains intact. 
+   A. Michael Berman, Rowan University, berman@rowan.edu 
    http://www.rowan.edu/evolve
 */
 // RCS $Id: cx4-1.cpp,v 1.2 1997/08/01 18:21:04 berman Exp $
@@ -14,7 +14,6 @@
 // Code Example 4-1: Patient Waiting Times
 
 #include <iostream>
-
 
 using namespace std;
 
@@ -38,7 +37,7 @@ int main()
    } while (answer != 'y');
    cout << "Number of visits: " << numberOfVisits << "\n";
    cout << "Total waiting time: " << totalWaitingTime << " minutes.\n";
-   cout << "Average wait is " << totalWaitingTime/numberOfVisits
+   cout << "Average wait is " << totalWaitingTime/numberOfVisits 
              << " minutes.\n";
    return 0;
 }
